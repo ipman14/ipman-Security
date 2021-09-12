@@ -14,21 +14,20 @@ module.exports = {
   cooldown: 3000,
   run: async (bot, message, args, dev) => {
     const embed = new MessageEmbed()
-      .setColor("#")
       .setFooter(message.author.tag, message.author.displayAvatarURL())
       .setTimestamp()
       .setThumbnail();
     embed
       .setTitle(`• To get help on a specific command type **s?help <command>!`)
       .setDescription(
-```General Commands;
-`invite`,`botinfo`,`allbots`
+General Commands;
+`invite,botinfo,allbots`
 Modration Commands;
-`ban`,`kick`,`lock`,`unlock`
+`ban,kick,lock,unlock`
 Config Commands;
 `prefix`
 Security Commands;
-`settings`,`whitelist`,`punishment`,`anti```
+`settings,whitelist,punishment,anti`
       );
     message.channel.send(embed);
   }
