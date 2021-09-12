@@ -132,5 +132,26 @@ bot.on("message", async message => {
     }
   }
 });
+///////////////////////////////////////////////////////////////////////////
+client.on('message', async message=>{
+  
+  if(message.content.startsWith(prefix+'unban')){
+if(!message.member.hasPermission('BAN_MEMBERS')) return message.channel.send('bbura to natwane am frmana anjam bdait')
+    let args = message.content.split(" ").slice(1)
+if(!args[0]) return message.channel.send('tkaya kasek mention bka bo unban krdn')
+const reason = args[1] || "dont reason"
+let unban = await client.users.fetch(args[0])
+
+message.guild.members.unban(unban,reason)
+const embed = new Discord.MessageEmbed()
+    
+    .setTitle('unban')  
+    .addField('Memer unband',unban)  
+    .addField('Unban by',message.author)
+    .addField('Reason',reason)
+message.channel.send(embed)
+
+  }})
+//////////////////////////////////////////////////////////////////////////
 
 bot.login("Nzk2MDIyMTgxNjU0MDM2NTAx.X_R3bQ.-WYESIhkT1Uy0Tn22Id2p_i2ZfU");
