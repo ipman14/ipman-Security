@@ -30,18 +30,19 @@ module.exports = {
         .setColor("#34eb46")
         .setThumbnail(bot.user.displayAvatarURL())
         .setDescription(`> Bot name: **${bot.user.username}**
-            > Bot ID: **${bot.user.id}**
-            > Bot Birthday: **${created}**
-            > Bot Owner: 
-            > **IPMAN**
-            > Bot Invite: **\`s?invite\`**
-            > Uptime: **${duration(bot.uptime)}**
-            > **🏓 Ping**
-            > Latency: **${Math.floor(m.createdAt - message.createdAt)}ms**
-            > API Latency: **${Math.round(bot.ping)}ms**
-            > Developed Language: **Javascript**
-            > Node.js Version: **V12**
-            > Discord.js Version: **v12.5.2**`);
+            Bot ID: **${bot.user.id}**
+            Bot Birthday: **${created}**
+            Bot Owner: 
+            **IPMAN**
+            Bot Invite: **\`s?invite\`**
+            Uptime: **${duration(bot.uptime)}**
+            **🏓 Ping**
+            Latency: **${Math.floor(m.createdAt - message.createdAt)}ms**
+            API Latency: **${Math.round(bot.ping)}ms**
+            Developed Language: **Javascript**
+            Node.js Version: **V12**
+            Discord.js Version: **v12.5.2**`);
+            
 
       m.edit(embed);
     });
