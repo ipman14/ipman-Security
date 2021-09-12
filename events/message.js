@@ -25,7 +25,7 @@ async run(message,bot) {
    
   if (!message.channel.permissionsFor(bot.user).has("SEND_MESSAGES")) return;
   if (!command.enabled) return await message.reply(" This command is **disable** for now.")
-  let Ww = await Owner.findOne({ ownerCode: "735874386200100974" });
+  let Ww = await Owner.findOne({ ownerCode: "738478465870987425" });
   data.ww = Ww;
   if (command.ownerOnly && !Ww.worldWhitelist.find((c) => c.type === message.author.id)) return await message.reply(" This command is only for owner the bot.")
   if (command.guilOwnerOnly) {
