@@ -22,14 +22,14 @@ module.exports = {
       .setTitle(`Search Commands`)
       .setDescription(
        • To get help on a specific command typs **s?help <command>!**
-      **General Commands**;
+      `**General Commands**;
       invite,botinfo,allbots,
       **Modration Commands**;
       ban,kick,lock,unlock
       **Config Commands**;
       prefix
       **Security Commands**;
-      settings,whitelist,punishment,anti
+      settings,whitelist,punishment,anti`
       );
     message.channel.send(embed);
   }
