@@ -12,7 +12,7 @@ module.exports = {
   run: async (bot, message, args, dev) => {
       if (!args[1])
         return message.channel.send(
-          "**Type a punishment like a `kick` or `ban` or `removeRole`**"
+          "**Type a punishment like a `kick` or `ban`**"
         );
       let data = await Guild.findOne({ guildID: message.guild.id })
       if (args[1] === "kick" || args[1] === "ban") {
