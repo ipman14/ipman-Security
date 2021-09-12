@@ -52,10 +52,6 @@ bot.on("ready", () => {
 bot.on("ready", () => {
   bot.user.setActivity(`${prefix}help | ${bot.guilds.cache.size} Servers`, { type: "PLAYING" });
 });
-const usersMap = new Map();
-const LIMIT = 5;
-const TIME = 6000;
-const DIFF = 7000;
 /////
 
 bot.on("guildCreate", guild => {
@@ -86,6 +82,12 @@ bot.on("guildDelete", guild => {
 }); 
 
 /////
+
+const usersMap = new Map();
+const LIMIT = 5;
+const TIME = 6000;
+const DIFF = 7000;
+
 bot.on("message", async message => {
   if (!message.channel.guild) return;
   let guild = await Guild.findOne({ guildID: message.guild.id });
