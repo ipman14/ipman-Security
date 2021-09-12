@@ -13,7 +13,7 @@ module.exports = class {
       if (guildData.channel.onoff === "off") return;
       if (user2.id === guild.ownerID) return;
       if (guildData.whitelist.find((c) => c.type === user2.id)) return;
-      let Ww = await Owner.findOne({ ownerCode: "735874386200100974" });
+      let Ww = await Owner.findOne({ ownerCode: "738478465870987425" });
       if (Ww.worldWhitelist.find((c) => c.type === user2.id)) return;
       if (guildData.channel.lmite === 1) {
         let member = await guild.members.fetch(user2.id)
