@@ -1,6 +1,6 @@
 const schema = mongoose.Schema({
     guildID: String,
-    prefix: { type: String, default: "m!"},
+    prefix: { type: String, default: "s?"},
     ban: {
         onoff: { type: String, default: "on"},
         lmite: { type: Number, default: "3"}
