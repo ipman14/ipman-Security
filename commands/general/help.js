@@ -21,7 +21,7 @@ module.exports = {
     embed
       .setTitle(`• To get help on a specific command type **s?help <command>!`)
       .setDescription(
-```.addField("General Section", ("`invite`, `support`, `stats`, `serverinfo`, `ping`, `userinfo`, `bots`, `vote`, `premium`")
+```.addField("General Section", "`invite`, `support`, `stats`, `serverinfo`, `ping`, `userinfo`, `bots`, `vote`, `premium`")
     .addField("Moderation Section", "`kick`, `ban`, `purge`, `unbanall`, `mute`, `lock`, `unlock`, `lockall`, `unlockall`")
     .addField("Config Section", "`setprefix`, `setlang`")
     .addField("Security Section", "`settings`, `punishment`, `whitelist`, `anti`, `logs`")```
