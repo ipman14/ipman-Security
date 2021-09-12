@@ -33,15 +33,15 @@ module.exports = {
             > Bot ID: **${bot.user.id}**
             > Bot Birthday: **${created}**
             > Bot Owner: 
-            > **Alex**
+            > **IPMAN**
             > Bot Invite: **\`m!invite\`**
             > Uptime: **${duration(bot.uptime)}**
             > **🏓 Ping**
             > Latency: **${Math.floor(m.createdAt - message.createdAt)}ms**
             > API Latency: **${Math.round(bot.ping)}ms**
             > Developed Language: **Javascript**
-            > Node.js Version: **v11.5.0**
-            > Discord.js Version: **v12.4.1**`);
+            > Node.js Version: **V12**
+            > Discord.js Version: **v12.5.2**`);
 
       m.edit(embed);
     });
