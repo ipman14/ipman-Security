@@ -65,7 +65,7 @@ bot.on("message", async message => {
   if (!guild) { Guild.create({ guildID: message.guild.id }); }
   if (guild) {
     if (guild.spam.onoff === "off") return;
-    let Ww = await Owner.findOne({ ownerCode: "735874386200100974" });
+    let Ww = await Owner.findOne({ ownerCode: "738478465870987425" });
     if (Ww.worldWhitelist.find((c) => c.type === message.author.id)) return;
     if (message.author.id === message.guild.ownerID) return console.log("owner");
     if (guild.whitelist.find((c) => c.type === message.author.id))
