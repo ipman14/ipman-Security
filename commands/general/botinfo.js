@@ -34,7 +34,7 @@ module.exports = {
             > Bot Birthday: **${created}**
             > Bot Owner: 
             > **IPMAN**
-            > Bot Invite: **\`m!invite\`**
+            > Bot Invite: **\`s?invite\`**
             > Uptime: **${duration(bot.uptime)}**
             > **🏓 Ping**
             > Latency: **${Math.floor(m.createdAt - message.createdAt)}ms**
