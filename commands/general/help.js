@@ -21,7 +21,15 @@ module.exports = {
     embed
       .setTitle(`Search Commands`)
       .setDescription(
-        '**Info**\n**`m!help`**\n**`m!botinfo`**\n**`m!invite`**\n\n**Moderation**\n**`m!ban [user]`**\n**`m!kick [user]`**\n**`m!lock`**\n**`m!unlock`**\n**`m!allbots`**\n\n**security [on/off]**\n**`m!anti-bot [on/off]`**\n**`m!anti-ban [on/off]`**\n**`m!anti-kick [on/off]`**\n**`m!anti-spam [on/off]`**\n**`m!anti-role [on/off]`**\n**`m!anti-channel [on/off]`**\n\n**security <number>**\n**`m!anti-ban <number>`**\n**`m!anti-kick <number>`**\n**`m!anti-role <number>`**\n**`m!anti-channel <number>`**\n\n**security**\n**`m!settings`**\n**`m!whitelist [add/remove] @user`**\n**`m!punishment [kick/ban]`**\n'
+       • To get help on a specific command typs **s?help <command>!**
+      **General Commands**;
+      invite,botinfo,allbots,
+      **Modration Commands**;
+      ban,kick,lock,unlock
+      **Config Commands**;
+      prefix
+      **Security Commands**;
+      settings,whitelist,punishment,anti
       );
     message.channel.send(embed);
   }
