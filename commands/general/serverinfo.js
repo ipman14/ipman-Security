@@ -39,15 +39,12 @@ const regions = {
 module.exports = {
   name: "serverinfo",
   aliases: ["server"],
-  description: "Get more information about your server",
-  usage: ["s!serverinfo"],
-  category: ["General"],
   enabled: true,
   memberPermissions: ["SEND_MESSAGES"],
   botPermissions: ["SEND_MESSAGES", "EMBED_LINKS"],
   ownerOnly: false,
   cooldown: 3000,
-  run: async (bot, message, args, dev, data) => {
+  run: async (bot, message, args, dev) => {
 
 		const roles = message.guild.roles.cache.sort((a, b) => b.position - a.position).map(role => role.toString());
 
