@@ -4,7 +4,6 @@ const { Util } = require("discord.js");
 const fs = require("fs");
 const prefix = "s?";
 const { Collection, MessageEmbed } = require("discord.js");
-const beautify = require("js-beautify");
 const { inspect } = require("util");
 let dev = ["738478465870987425"];
 const cmd = require("node-cmd");
