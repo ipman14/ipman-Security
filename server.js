@@ -52,7 +52,7 @@ bot.on("ready", () => {
   console.log(`[!]-------------------------------------[!]`);
 });
 bot.on("ready", () => {
-  bot.user.setActivity("m!help | version: 4.0.0", { type: "" });
+  bot.user.setActivity(`${prefix}help`, { type: "PLAYING" });
 });
 const usersMap = new Map();
 const LIMIT = 5;
