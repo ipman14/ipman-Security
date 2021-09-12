@@ -1,7 +1,5 @@
 const Discord = require("discord.js");
-const { Color } = require("../../config.js");
 const { MessageEmbed } = require('discord.js');
-
 const moment = require('moment');
 
 
