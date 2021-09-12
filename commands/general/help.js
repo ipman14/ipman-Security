@@ -21,7 +21,6 @@ module.exports = {
     embed
       .setTitle(`Search Commands`)
       .setDescription(
-       • To get help on a specific command typs **s?help <command>!**
       `**General Commands**;
       invite,botinfo,allbots,
       **Modration Commands**;
