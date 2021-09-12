@@ -14,21 +14,21 @@ module.exports = {
   cooldown: 3000,
   run: async (bot, message, args, dev) => {
     const embed = new MessageEmbed()
-      .setColor("#34eb46")
+      .setColor("#")
       .setFooter(message.author.tag, message.author.displayAvatarURL())
       .setTimestamp()
       .setThumbnail(message.author.displayAvatarURL());
     embed
       .setTitle(`Search Commands`)
       .setDescription(
-      `**General Commands**;
-      invite,botinfo,allbots,
-      **Modration Commands**;
-      ban,kick,lock,unlock
-      **Config Commands**;
-      prefix
-      **Security Commands**;
-      settings,whitelist,punishment,anti`
+`**General Commands**;
+invite,botinfo,allbots,
+**Modration Commands**;
+ban,kick,lock,unlock
+**Config Commands**;
+prefix
+**Security Commands**;
+settings,whitelist,punishment,anti`
       );
     message.channel.send(embed);
   }
