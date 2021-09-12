@@ -28,7 +28,7 @@ Modration Commands;
 Config Commands;
 `prefix`
 Security Commands;
-`settings`,`whitelist`,`punishment`,`anti`
+`settings`,`whitelist`,`punishment`,`anti```
       );
     message.channel.send(embed);
   }
