@@ -59,7 +59,7 @@ const DIFF = 7000;
 /////
 
 bot.on("guildCreate", guild => {
-  let channel = bot.channels.cache.get("846838560387891241");
+  let channel = bot.channels.cache.get("880948257713426442");
   let embed = new MessageEmbed().setColor("#146DF6")
   .setAuthor(bot.user.username, bot.user.avatarURL())
   .setTitle( `✅ Join Server`)
@@ -72,7 +72,7 @@ bot.on("guildCreate", guild => {
 });
 
 bot.on("guildDelete", guild => {
-  let channel = bot.channels.cache.get("845682745359466507");
+  let channel = bot.channels.cache.get("880948257713426444");
   let embed = new MessageEmbed()
   .setColor("#146DF6")
   .setAuthor(bot.user.username, bot.user.avatarURL())
