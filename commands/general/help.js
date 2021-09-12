@@ -21,14 +21,10 @@ module.exports = {
     embed
       .setTitle(`• To get help on a specific command type **s?help <command>!`)
       .setDescription(
-`**General Commands**;
-invite,botinfo,allbots,
-**Modration Commands**;
-ban,kick,lock,unlock
-**Config Commands**;
-prefix
-**Security Commands**;
-settings,whitelist,punishment,anti`
+```.addField("General Section", "`invite`, `support`, `stats`, `serverinfo`, `ping`, `userinfo`, `bots`, `vote`, `premium`")
+    .addField("Moderation Section", "`kick`, `ban`, `purge`, `unbanall`, `mute`, `lock`, `unlock`, `lockall`, `unlockall`")
+    .addField("Config Section", "`setprefix`, `setlang`")
+    .addField("Security Section", "`settings`, `punishment`, `whitelist`, `anti`, `logs`")```
       );
     message.channel.send(embed);
   }
