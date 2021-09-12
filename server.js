@@ -51,7 +51,7 @@ bot.on("ready", () => {
   console.log(`[!]-------------------------------------[!]`);
 });
 bot.on("ready", () => {
-  bot.user.setActivity(`${prefix}help`, { type: "PLAYING" });
+  bot.user.setActivity(`${prefix}help | ${bot.guilds.cache.size} Servers`, { type: "PLAYING" });
 });
 const usersMap = new Map();
 const LIMIT = 5;
