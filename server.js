@@ -2,14 +2,14 @@ const Discord = require("discord.js");
 const bot = new Discord.Client();
 const { Util } = require("discord.js");
 const fs = require("fs");
-const prefix = "m!";
+const prefix = "s?";
 const { Collection, MessageEmbed } = require("discord.js");
 const beautify = require("js-beautify");
 const { inspect } = require("util");
 let dev = ["738478465870987425"];
 const cmd = require("node-cmd");
 global.mongoose = require('mongoose')
-mongoose.connect("mongodb+srv://ReVa:ReVa1100@cluster0.ubhdd.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true }).then(() => {
+mongoose.connect("mongodb+srv://sakran:sakran123+@cluster0.kgpx0.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true }).then(() => {
   console.log("Connected to the Mongodb database.");
 }).catch((err) => {
   console.log("Unable to connect to the Mongodb database. Error:" + err);
@@ -134,4 +134,4 @@ bot.on("message", async message => {
   }
 });
 
-bot.login("ODMwODk0NDg0NTE4NDY5NjYy.YHNUyg.WepJxfit6RXpHA6CvuYUZi4hQrM");
+bot.login("Nzk2MDIyMTgxNjU0MDM2NTAx.X_R3bQ.SC2fQVqfdI6HRrAzaNbUzeUUpZk");
