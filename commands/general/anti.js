@@ -13,7 +13,7 @@ module.exports = {
     const embed = new MessageEmbed()
       .setColor("#34eb46")
       .setFooter(message.author.tag, message.author.displayAvatarURL())
-      .setDescription(`Type: [<number>,on,off]\n\n**anti-ban, anti-kick, anti-role, anti-channel, anti-bot, anti-spam`)
+      .setDescription(`Type: [<number>,on,off]\n\n**anti-ban, anti-kick, anti-role, anti-channel, anti-bot, anti-spam**`)
     message.channel.send(embed);
   }
 }
