@@ -20,7 +20,7 @@ module.exports = {
     embed
       .setTitle(`• To get help on a specific command type **s?help <command>!`)
       .setDescription(
-General Commands;
+`General Commands;
 `invite,botinfo,allbots`
 Modration Commands;
 `ban,kick,lock,unlock`
