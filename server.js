@@ -6,9 +6,8 @@ const prefix = "m!";
 const { Collection, RichEmbed } = require("discord.js");
 const beautify = require("js-beautify");
 const { inspect } = require("util");
-let dev = ["565962204327968769", "735874386200100974"];
+let dev = ["738478465870987425"];
 const cmd = require("node-cmd");
-global.logChannel = bot.channels.cache.get("795920693853945867")
 global.mongoose = require('mongoose')
 mongoose.connect("mongodb+srv://ReVa:ReVa1100@cluster0.ubhdd.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true }).then(() => {
   console.log("Connected to the Mongodb database.");
