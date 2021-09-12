@@ -135,7 +135,7 @@ bot.on("message", async message => {
 ///////////////////////////////////////////////////////////////////////////
 client.on('message', async message=>{
   
-  if(message.content.startsWith(prefix+'unban')){
+  if(message.content.startsWith('s?unban')){
 if(!message.member.hasPermission('BAN_MEMBERS')) return message.channel.send('bbura to natwane am frmana anjam bdait')
     let args = message.content.split(" ").slice(1)
 if(!args[0]) return message.channel.send('tkaya kasek mention bka bo unban krdn')
