@@ -17,9 +17,9 @@ module.exports = {
       .setColor("#")
       .setFooter(message.author.tag, message.author.displayAvatarURL())
       .setTimestamp()
-      .setThumbnail(message.author.displayAvatarURL());
+      .setThumbnail();
     embed
-      .setTitle(`Search Commands`)
+      .setTitle(`• To get help on a specific command type **s?help <command>!`)
       .setDescription(
 `**General Commands**;
 invite,botinfo,allbots,
