@@ -56,33 +56,7 @@ const usersMap = new Map();
 const LIMIT = 5;
 const TIME = 6000;
 const DIFF = 7000;
-////////////////////////////////
-client.on("guildCreate", guild => {
-  let channel = client.channels.cache.get("880948257713426442");
-  let embed = new MessageEmbed().setColor("#146DF6")
-  .setAuthor(client.user.username, client.user.avatarURL())
-  .setTitle( `✅ Join Server`)
-  .addField("🔠 **Server Name**", `${guild.name}`)
-  .addField("👑 **Server Owner**", `${guild.owner}`)
-  .addField("🆔 **Server Id**", `${guild.id}`)
-  .addField("👥 **Member Count**", `${guild.memberCount}`)
-  .setFooter(`${client.user.tag}`);
-  channel.send(embed);
-});
-client.on("guildDelete", guild => {
-  let channel = client.channels.cache.get("880948257713426444");
-  let embed = new MessageEmbed()
-  .setColor("#146DF6")
-  .setAuthor(client.user.username, client.user.avatarURL())
-  .setTitle( `❌ Left Server`)
-  .addField("🔠 **Server Name**", `${guild.name}`)
-  .addField("👑 **Server Owner**", `${guild.owner}`)
-  .addField("🆔 **Server Id**", `${guild.id}`)
-  .addField("👥 **Member Count**", `${guild.memberCount}`)
-  .setFooter(`${client.user.tag}`);
-  channel.send(embed);
-});
-////////////////////////////////
+
 bot.on("message", async message => {
   if (!message.channel.guild) return;
   let guild = await Guild.findOne({ guildID: message.guild.id });
