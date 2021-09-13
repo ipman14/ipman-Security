@@ -19,10 +19,10 @@ module.exports = {
       .setThumbnail();
     embed
       .setTitle(`• To get help on a specific command type **s?help <command>!**`)
-  ```.addField("General", "`invite`, `serverinfo`, `botinfo`, `userinfo`, `allbots`")
+  .addField("General", "`invite`, `serverinfo`, `botinfo`, `userinfo`, `allbots`")
     .addField("Moderation", "`lock`, `unlock`, `ban`, `kick`")
     .addField("Config", "`prefix`")
-    .addField("Security", "`settings`, `punishment`, `whitelist`, `anti`")```
+    .addField("Security", "`settings`, `punishment`, `whitelist`, `anti`")
     message.channel.send(embed);
   }
 }
