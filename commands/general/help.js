@@ -19,16 +19,10 @@ module.exports = {
       .setThumbnail();
     embed
       .setTitle(`• To get help on a specific command type **s?help <command>!`)
-      .setDescription(
-```General Commands;
-invite,botinfo,allbots
-Modration Commands;
-ban,kick,lock,unlock
-Config Commands;
-prefix
-Security Commands;
-settings,whitelist,punishment,anti```
-      );
+  .addField("General", "`invite`, `serverinfo`, `botinfo`, `userinfo`")
+    .addField("Moderation", "`lock`, `unlock`")
+    .addField("Config", "`setprefix`")
+    .addField("Security", "`settings`, `punishment`, `whitelist`, `anti`")
     message.channel.send(embed);
   }
 }
