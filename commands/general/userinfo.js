@@ -18,7 +18,6 @@ let nickname = member.nickname !== undefined && member.nickname !== null ? membe
 
 
       const userinfo = new MessageEmbed()
-     .setColor("GREEN")
      .setThumbnail(member.user.displayAvatarURL())
      .addField("Username", `${member.user.username}`, true)
      .addField("Discriminator", `${member.user.discriminator}`, true)
