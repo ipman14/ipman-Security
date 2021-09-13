@@ -14,8 +14,7 @@ module.exports = {
         let data = await Guild.findOne({ guildID: message.guild.id })
 
         let embed = new Discord.MessageEmbed()
-        .setColor("#34eb46")
-        .setDescription(`new prefix inthis guild is \`${args[1]}\``)
+        .setDescription(`new prefix in this guild is \`${args[1]}\``)
         message.channel.send(embed)
         data.prefix = args[1];
         data.save();
