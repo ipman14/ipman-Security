@@ -19,6 +19,7 @@ module.exports = {
       .setThumbnail();
     embed
       .setTitle(`• To get help on a specific command type **s?help <command>!**`)
+
   .addField("General Commands;", "`invite`, `serverinfo`, `botinfo`, `userinfo`, `allbots`")
     .addField("Moderation Commands;", "`lock`, `unlock`, `ban`, `kick`")
     .addField("Config Commands;", "`prefix`")
