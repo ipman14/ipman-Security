@@ -83,7 +83,7 @@ bot.on("guildDelete", guild => {
 
 /////
 
-client.on("message", message => {
+bot.on("message", message => {
   if (message.content === "s?lockall") {
     if (!message.member.hasPermission("MANAGE_CHANNELS"))
       return message.channel.send("**Please Check Your Permission**");
@@ -96,7 +96,7 @@ client.on("message", message => {
   }
 });
 
-client.on("message", message => {
+bot.on("message", message => {
   if (message.content === "s?unlockall") {
     if (!message.member.hasPermission("MANAGE_CHANNELS"))
       return message.channel.send("**Please Check Your Permission**");
