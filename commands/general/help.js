@@ -21,7 +21,7 @@ module.exports = {
       .setTitle(`• To get help on a specific command type **s?help <command>!**`)
 
   .addField("General Commands;", "`invite`, `serverinfo`, `botinfo`, `userinfo`, `allbots`")
-    .addField("Moderation Commands;", "`lock`, `unlock`, `lockall`, `unlockall`, `ban`, `kick`")
+    .addField("Moderation Commands;", "`lock`, `unlock`, `lockall`, `unlockall`, `ban`, `unban`, `kick`")
     .addField("Config Commands;", "`prefix`")
     .addField("Security Commands;", "`settings`, `punishment`, `whitelist`, `anti`")
     message.channel.send(embed);
