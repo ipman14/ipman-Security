@@ -55,8 +55,6 @@ module.exports = {
 		const serverinfo = new MessageEmbed()
                       .setTitle("Server info")
 
-		         .setColor("GREEN")
-
 		         .setThumbnail(message.guild.iconURL({ dynamic: true }))
 
 		         .addField('**General**', [
