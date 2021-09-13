@@ -42,9 +42,8 @@ API Latency: **${Math.round(bot.ping)}ms**
 Developed Language: **Javascript**
 Node.js Version: **V12**
 Discord.js Version: **v12.5.2**`);
-Invite Link
 .setTitle("")
-Server Supporter
+
 .setTitle("")
         
 
