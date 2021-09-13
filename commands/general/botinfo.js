@@ -43,9 +43,11 @@ Developed Language: **Javascript**
 Node.js Version: **V12**
 Discord.js Version: **v12.5.2**`);
 .setTitle("")
-
+.setURL(
+  ``
 .setTitle("")
-        
+.setURL(
+  ``        
 
       m.edit(embed);
     });
