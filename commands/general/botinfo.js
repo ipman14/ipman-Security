@@ -47,7 +47,7 @@ Discord.js Version: **v12.5.2**`);
   `https://discord.com/api/oauth2/authorize?client_id=796022181654036501&permissions=8&scope=bot`
 .setTitle("Server Supporter")
 .setURL(
-  `https://discord.gg/Wy7K4hyZ5p `        
+  `https://discord.gg/Wy7K4hyZ5p`        
 
       m.edit(embed);
     });
