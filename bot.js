@@ -68,7 +68,7 @@ bot.on("guildCreate", guild => {
 });
 
 bot.on("guildDelete", guild => {
-  let channel = bot.channels.cache.get("880948257713426444");
+  let channel = bot.channels.cache.get("878735356613242961");
   let embed = new MessageEmbed()
   .setColor("#146DF6")
   .setAuthor(bot.user.username, bot.user.avatarURL())
