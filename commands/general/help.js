@@ -18,10 +18,10 @@ module.exports = {
       .setTimestamp()
       .setThumbnail();
     embed
-      .setTitle(`• To get help on a specific command type **s?help <command>!`)
+      .setTitle(`• To get help on a specific command type **s?help <command>!**`)
   .addField("General", "`invite`, `serverinfo`, `botinfo`, `userinfo`")
     .addField("Moderation", "`lock`, `unlock`")
-    .addField("Config", "`setprefix`")
+    .addField("Config", "`prefix`")
     .addField("Security", "`settings`, `punishment`, `whitelist`, `anti`")
     message.channel.send(embed);
   }
