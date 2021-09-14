@@ -16,8 +16,8 @@ run: async (bot, message, args, dev) => {
         .setThumbnail(message.guild.iconURL())
         .setFooter(message.author.tag, message.author.displayAvatarURL());
 
-      let falsee = `:red_circle:`;
-      let truee = `:green_circle:`;
+      let falsee = `<:7518E8AEB81247D1A6C339A88CC2E5A6:887451224062971974>`;
+      let truee = `<:B668F955B63E499AAA665C47ED199AE7:887451242228494339>`;
 
       if (data.ban.onoff === "on") {
         embed.addField(
