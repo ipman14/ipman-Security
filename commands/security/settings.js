@@ -12,7 +12,6 @@ module.exports = {
 run: async (bot, message, args, dev) => {
     let data = await Guild.findOne({ guildID: message.guild.id })
       let embed = new Discord.MessageEmbed()
-        .setColor("#34eb46")
         .setThumbnail(message.guild.iconURL())
         .setFooter(message.author.tag, message.author.displayAvatarURL());
 
