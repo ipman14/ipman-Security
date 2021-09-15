@@ -50,10 +50,9 @@ bot.on("ready", () => {
   console.log(`[!]-------------------------------------[!]`);
 });
 bot.on("ready", () => {
-  setInterval(() => {
-    bot.user.setActivity(`Type: s?help | Server ${client.guilds.cache.size}`);
-  }, 2000);
+  bot.user.setActivity(`${prefix}help`, { type: "PLAYING" });
 });
+
 /////
 
 bot.on("guildDelete", guild => {
