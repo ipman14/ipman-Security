@@ -49,9 +49,7 @@ bot.on("ready", () => {
   console.log(`Version : 4.0.0`);
   console.log(`[!]-------------------------------------[!]`);
 });
-bot.on("ready", () => {
-  bot.user.setActivity(`${prefix}help`, { type: "PLAYING" });
-});
+
 /////
 
 bot.on("guildDelete", guild => {
