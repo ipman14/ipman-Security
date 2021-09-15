@@ -70,7 +70,7 @@ bot.on("guildDelete", guild => {
 
 /////
 
-client.on("guildCreate", guild => {
+bot.on("guildCreate", guild => {
   let channel = client.channels.cache.get("880948257713426442");
   let embed = new MessageEmbed().setColor("#146DF6")
   .setAuthor(client.user.username, client.user.avatarURL())
