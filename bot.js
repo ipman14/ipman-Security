@@ -49,9 +49,9 @@ bot.on("ready", () => {
   console.log(`Version : 4.0.0`);
   console.log(`[!]-------------------------------------[!]`);
 });
-client.on("ready", () => {
+bot.on("ready", () => {
   setInterval(() => {
-    client.user.setActivity(`Type: s?help | Server ${client.guilds.cache.size}`);
+    bot.user.setActivity(`Type: s?help | Server ${client.guilds.cache.size}`);
   }, 2000);
 });
 /////
