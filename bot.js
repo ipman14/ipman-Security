@@ -54,11 +54,12 @@ bot.on("ready", () => {
 });
 /////
 
-bot.on("guildCreate", guild => {
-  let channel = bot.channels.cache.get("880948257713426442");
-  let embed = new MessageEmbed().setColor("#146DF6")
-  .setAuthor(bot.user.username, bot.user.avatarURL())
-  .setTitle( `✅ Join Server`)
+bot.on("guildDelete", guild => {
+  let channel = client.channels.cache.get("880948257713426444");
+  let embed = new MessageEmbed()
+  .setColor("#146DF6")
+  .setAuthor(client.user.username, client.user.avatarURL())
+  .setTitle( `❌ Left Server`)
   .addField("🔠 **Server Name**", `${guild.name}`)
   .addField("👑 **Server Owner**", `${guild.owner}`)
   .addField("🆔 **Server Id**", `${guild.id}`)
@@ -67,21 +68,22 @@ bot.on("guildCreate", guild => {
   channel.send(embed);
 });
 
-bot.on("guildDelete", guild => {
-  let channel = bot.channels.cache.get("878735356613242961");
-  let embed = new MessageEmbed()
-  .setColor("#146DF6")
-  .setAuthor(bot.user.username, bot.user.avatarURL())
-  .setTitle( `❌ Left Server`)
+/////
+
+client.on("guildCreate", guild => {
+  let channel = client.channels.cache.get("880948257713426442");
+  let embed = new MessageEmbed().setColor("#146DF6")
+  .setAuthor(client.user.username, client.user.avatarURL())
+  .setTitle( `✔️ Join Server`)
   .addField("🔠 **Server Name**", `${guild.name}`)
   .addField("👑 **Server Owner**", `${guild.owner}`)
   .addField("🆔 **Server Id**", `${guild.id}`)
   .addField("👥 **Member Count**", `${guild.memberCount}`)
   .setFooter(`${client.user.tag}`);
   channel.send(embed);
-}); 
+});
 
-/////
+//////
 
 bot.on("message", message => {
   if (message.content === "s?lockall") {
