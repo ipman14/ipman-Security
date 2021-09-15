@@ -49,7 +49,11 @@ bot.on("ready", () => {
   console.log(`Version : 4.0.0`);
   console.log(`[!]-------------------------------------[!]`);
 });
-
+client.on("ready", () => {
+  setInterval(() => {
+    client.user.setActivity(`Type: s?help | Server ${client.guilds.cache.size}`);
+  }, 2000);
+});
 /////
 
 bot.on("guildDelete", guild => {
