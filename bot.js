@@ -199,4 +199,25 @@ bot.on("message", async message => {
   }
 });
 
+///////////////
+client.on('guildCreate', guild => {
+client.channels.cache.get("888396986804490250").send(`
+✅ **Join Server**: ${client.guilds.cache.size}
+🔠 **Server Name**: ${guild.name}
+👑 **Server Owner**: ${guild.owner}
+🆔 **Server Id**: ${guild.id}
+👥 **Member Count**: ${guild.memberCount}**`)
+});
+///////////////// left server
+client.on('guildDelete', guild => {
+  client.channels.cache.get("888396949928173589").send(`
+❎ **Lift Server**: ${client.guilds.cache.size}
+🔠 **Server Name**: ${guild.name}
+👑 **Server Owner**: ${guild.owner}
+🆔 **Server Id**: ${guild.id}
+👥 **Member Count**: ${guild.memberCount}**`)
+});
+
+//////////////
+
 bot.login("ODcxNzE5OTcwNTQxODEzNzgx.YQfafA.iKAbGpbitnLG0A4MJCP_IFKzOn0");
