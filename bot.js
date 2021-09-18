@@ -144,7 +144,37 @@ bot.on("message", message => {
 });
 
 ////////////////
+bot.on("message", message => {
+  if (message.content === "s?12") {
+    const embed = new Discord.MessageEmbed()
+      .setColor("RANDOM")
+    
+      .addField("`my name`", `** ${client.user.tag} **`, true)
+    
+     .addField("`My ID`",  `**799228179784794183**`, true)
 
+      .addField("`Server`", `**${client.guilds.cache.size} Server**`, true)
+    
+     .addField("`Usres`",  `**${client.users.cache.size}  Users**`, true)
+    
+     .addField( "`My Prefix` ",`**j!**`,true)
+    
+     .addField("`Node.js Version`",  `**12**`, true)
+    
+    .addField("`Language Program`",  `**Java Script**`, true)
+    
+    .addField("`Discord.js `",  `**12.5.1**`, true)
+    
+    
+     .addField( "`developer bot` ",`<@752164907650383993>`,true)
+
+      .setImage(
+        ""
+      );
+    message.channel.send(embed);
+    message.react("");
+  }
+});
 ///////////////
 
 const usersMap = new Map();
