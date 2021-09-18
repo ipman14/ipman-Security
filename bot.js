@@ -5,7 +5,7 @@ const fs = require("fs");
 const prefix = "s?";
 const { Collection, MessageEmbed } = require("discord.js");
 const { inspect } = require("util");
-let dev = ["738478465870987425"];
+let dev = ["752164907650383993"];
 const cmd = require("node-cmd");
 global.mongoose = require('mongoose')
 mongoose.connect("mongodb+srv://sakran:sakran123+@cluster0.kgpx0.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true }).then(() => {
@@ -54,35 +54,6 @@ bot.on("ready", () => {
 });
 
 /////
-
-bot.on("guildDelete", guild => {
-  let channel = client.channels.cache.get("880948257713426444");
-  let embed = new MessageEmbed()
-  .setColor("#146DF6")
-  .setAuthor(client.user.username, client.user.avatarURL())
-  .setTitle( `❌ Left Server`)
-  .addField("🔠 **Server Name**", `${guild.name}`)
-  .addField("👑 **Server Owner**", `${guild.owner}`)
-  .addField("🆔 **Server Id**", `${guild.id}`)
-  .addField("👥 **Member Count**", `${guild.memberCount}`)
-  .setFooter(`${client.user.tag}`);
-  channel.send(embed);
-});
-
-/////
-
-bot.on("guildCreate", guild => {
-  let channel = client.channels.cache.get("880948257713426442");
-  let embed = new MessageEmbed().setColor("#146DF6")
-  .setAuthor(client.user.username, client.user.avatarURL())
-  .setTitle( `✔️ Join Server`)
-  .addField("🔠 **Server Name**", `${guild.name}`)
-  .addField("👑 **Server Owner**", `${guild.owner}`)
-  .addField("🆔 **Server Id**", `${guild.id}`)
-  .addField("👥 **Member Count**", `${guild.memberCount}`)
-  .setFooter(`${client.user.tag}`);
-  channel.send(embed);
-});
 
 //////
 
@@ -144,37 +115,7 @@ bot.on("message", message => {
 });
 
 ////////////////
-bot.on("message", message => {
-  if (message.content === "s?ipman") {
-    const embed = new Discord.MessageEmbed()
-      .setColor("RANDOM")
-    
-      .addField("`my name`", `** ${client.user.tag} **`, true)
-    
-     .addField("`My ID`",  `**799228179784794183**`, true)
 
-      .addField("`Server`", `**${client.guilds.cache.size} Server**`, true)
-    
-     .addField("`Usres`",  `**${client.users.cache.size}  Users**`, true)
-    
-     .addField( "`My Prefix` ",`**j!**`,true)
-    
-     .addField("`Node.js Version`",  `**12**`, true)
-    
-    .addField("`Language Program`",  `**Java Script**`, true)
-    
-    .addField("`Discord.js `",  `**12.5.1**`, true)
-    
-    
-     .addField( "`developer bot` ",`<@752164907650383993>`,true)
-
-      .setImage(
-        ""
-      );
-    message.channel.send(embed);
-    message.react("");
-  }
-});
 ///////////////
 
 const usersMap = new Map();
