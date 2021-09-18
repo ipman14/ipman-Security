@@ -36,6 +36,7 @@ Bot Owner:
 Bot Invite: **\`s?invite\`**
 Uptime: **${duration(bot.uptime)}**
 **🏓 Ping**
+Usres,  **${client.users.cache.size}  Users** , true
 Latency: **${Math.floor(m.createdAt - message.createdAt)}ms**
 API Latency: **${Math.round(bot.ping)}ms**
 Developed Language: **Javascript**
