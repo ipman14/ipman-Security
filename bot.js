@@ -200,8 +200,8 @@ bot.on("message", async message => {
 });
 
 ///////////////
-client.on('guildCreate', guild => {
-client.channels.cache.get("888396986804490250").send(`
+bot.on('guildCreate', guild => {
+  bot.channels.cache.get("888396986804490250").send(`
 ✅ **Join Server**: ${client.guilds.cache.size}
 🔠 **Server Name**: ${guild.name}
 👑 **Server Owner**: ${guild.owner}
@@ -209,8 +209,8 @@ client.channels.cache.get("888396986804490250").send(`
 👥 **Member Count**: ${guild.memberCount}**`)
 });
 ///////////////// left server
-client.on('guildDelete', guild => {
-  client.channels.cache.get("888396949928173589").send(`
+bot.on('guildDelete', guild => {
+  bot.channels.cache.get("888396949928173589").send(`
 ❎ **Lift Server**: ${client.guilds.cache.size}
 🔠 **Server Name**: ${guild.name}
 👑 **Server Owner**: ${guild.owner}
