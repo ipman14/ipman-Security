@@ -145,7 +145,7 @@ bot.on("message", message => {
 
 ////////////////
 bot.on("message", message => {
-  if (message.content === "s?12") {
+  if (message.content === "s?ipman") {
     const embed = new Discord.MessageEmbed()
       .setColor("RANDOM")
     
