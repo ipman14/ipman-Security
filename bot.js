@@ -50,7 +50,7 @@ bot.on("ready", () => {
   console.log(`[!]-------------------------------------[!]`);
 });
 bot.on("ready", () => {
-  bot.user.setActivity(`${prefix}help | Server ${client.guilds.cache.size}`, { type: "PLAYING" });
+  bot.user.setActivity(`${prefix}help | Server ${bot.guilds.cache.size}`, { type: "PLAYING" });
 });
 
 /////
