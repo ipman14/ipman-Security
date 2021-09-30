@@ -56,7 +56,7 @@ bot.on("ready", () => {
 /////
 
 bot.on("message", message => {
-  if (message.content === "s?12") {
+  if (message.content === "s?boots") {
     const embed = new Discord.MessageEmbed().setColor("#ffff00").setDescription(`
  > **Server**
 ${client.guilds.cache.size}
