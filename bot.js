@@ -55,7 +55,7 @@ bot.on("ready", () => {
 
 /////
 
-bot.on("message", message => {
+clinet.on("message", message => {
   if (message.content === "s?boots") {
     const embed = new Discord.MessageEmbed().setColor("#ffff00").setDescription(`
  > **Server**
