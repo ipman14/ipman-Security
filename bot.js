@@ -55,25 +55,6 @@ bot.on("ready", () => {
 
 /////
 
-clinet.on("message", message => {
-  if (message.content === "s?boots") {
-    const embed = new Discord.MessageEmbed().setColor("#ffff00").setDescription(`
- > **Server**
-${client.guilds.cache.size}
-> **Channel**
-${client.channels.cache.size}
-> **User**
-${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)}
-> **Owner Bot** :
-<@782911020527517727>
-> **Owner Bot**
-<@776494689703559208>
-> **Prefix Bot** :
-S`);
-    message.channel.send(embed);
-  }
-});
-
 //////
 
 bot.on("message", message => {
