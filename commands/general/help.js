@@ -15,7 +15,7 @@ module.exports = {
   run: async (bot, message, args, dev) => {
     const embed = new MessageEmbed()
       .setFooter(message.author.tag, message.author.displayAvatarURL())
-      .setColor("#808080")
+      .setColor("#696969")
       .setTimestamp()
       .setThumbnail();
     embed
