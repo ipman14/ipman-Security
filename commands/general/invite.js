@@ -15,7 +15,7 @@ module.exports = {
       )
       .setFooter(message.author.username, message.author.avatarURL());
       
-      message.author.send(embed).catch(err=>{
+      message.channel.send(embed).catch(err=>{
       message.channel.send(embed)
       })
   }
