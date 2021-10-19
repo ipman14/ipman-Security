@@ -12,6 +12,7 @@ module.exports = {
   run: async (bot, message, args, dev) => {
     const embed = new MessageEmbed()
       .setFooter(message.author.tag, message.author.displayAvatarURL())
+      .setColor("#303135")
       .setTitle("**list of all commands Security**")
 
       .setDescription(`Type: [<number>,on,off]\n\nGuardian:**anti-ban, anti-kick, anti-role, anti-channel, anti-bot, anti-spam**`)
