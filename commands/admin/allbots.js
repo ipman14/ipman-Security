@@ -14,6 +14,7 @@ module.exports = {
       .map(m => `${i++} - <@${m.id}>`);
     const embed = new Discord.MessageEmbed()
       .setAuthor(message.author.tag, message.author.avatarURL())
+      .setColor("#303135")
       .setDescription(
         `**Found ${
           message.guild.members.cache.filter(m => m.user.bot).size
