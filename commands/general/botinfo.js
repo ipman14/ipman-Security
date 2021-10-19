@@ -27,6 +27,7 @@ module.exports = {
     message.channel.send(`🏓 **Pinging...**`).then(m => {
       const embed = new Discord.MessageEmbed()
         .setTitle(`${bot.user.username} Info`)
+        .setColor("#303135")
         .setThumbnail(bot.user.displayAvatarURL())
         .setDescription(`> Bot name: **${bot.user.username}**
 Bot ID: **${bot.user.id}**
