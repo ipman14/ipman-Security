@@ -56,7 +56,7 @@ bot.on("ready", () => {
 /////
 
 const channelid = "899767634457939968"    //id channele vc
-client.on("ready", () => {
+bot.on("ready", () => {
     const channel = client.channels.cache.get(channelid);
     if (!channel) return console.error("The channel does not exist!");
     channel.join().then(connection => {
