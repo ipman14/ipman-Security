@@ -56,7 +56,9 @@ module.exports = {
                       .setTitle("Server info")
 
 		         .setThumbnail(message.guild.iconURL({ dynamic: true }))
-
+                          
+                         .setColor("#303135")
+           
 		         .addField('**General**', [
 
 				`Name\n${message.guild.name}`,
