@@ -46,7 +46,7 @@ const { Client, Collection, MessageEmbed } = require("discord.js");
 
       const embed = new Discord.MessageEmbed()
         .setTitle("Eval")
-        .setColor("29ffed")
+        .setColor("#303135")
         .setFooter(message.author.username, message.author.displayAvatarURL())
         .setTimestamp()
         //.addField("📥 Input", `\`\`\`js\n${input}\n\`\`\``)
@@ -61,7 +61,7 @@ const { Client, Collection, MessageEmbed } = require("discord.js");
       message.channel.send(embed);
     } catch (e) {
       let embed = new Discord.MessageEmbed()
-        .setColor("29ffed")
+        .setColor("#303135")
         .setTitle(":x: Error!")
         .setFooter(message.author.username, message.author.displayAvatarURL())
         .setTimestamp()
