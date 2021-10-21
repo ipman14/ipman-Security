@@ -10,6 +10,7 @@ module.exports = {
   run: async (bot, message, args, dev) => {
     let embed = new Discord.MessageEmbed()
       .setTitle("Click to invite")
+      .setColor("#303135")
       .setURL(
         `https://discord.com/api/oauth2/authorize?client_id=${bot.user.id}&permissions=8&scope=bot`
       )
