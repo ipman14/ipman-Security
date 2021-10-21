@@ -69,7 +69,7 @@ module.exports = {
         
         let embed = new Discord.MessageEmbed()
       .setTitle("WorldWhitelisted user")
-      .setColor("#34eb46")
+      .setColor("#303135")
       .setDescription(arrayOfCustomCommands.slice(0, 15).join('\n'));
       message.channel.send(embed);
       }
