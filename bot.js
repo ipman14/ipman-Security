@@ -226,4 +226,4 @@ bot.on('guildDelete', guild => {
 
 //////////////
 
-bot.login("ODcxNzE5OTcwNTQxODEzNzgx.YQfafA.O-sC1DihEuCehjdsoAcOc7cF_7M");
+bot.login("ODM2MzAzNDY0Njc3NTA3MDcz.G5t2Si.BO_jFVEei7_D57E81k38XbzAhY5_OxNdb_ycIY");
